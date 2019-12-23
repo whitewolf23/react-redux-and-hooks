@@ -9,12 +9,12 @@ const CounterContainer = () => {
   const counter = useSelector(state => state.counter, []);
 
   const onIncrease = useCallback(
-  () => dispatch({ type: "counter/INCREMENT" }),
-  [dispatch]
+    () => dispatch({ type: "counter/INCREMENT" }),
+    [dispatch]
   )
   const onDecrease = useCallback(
-  () => dispatch({ type: "counter/DECREMENT" }),
-  [dispatch]
+    () => dispatch({ type: "counter/DECREMENT" }),
+    [dispatch]
   )
 
   return (
